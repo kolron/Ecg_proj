@@ -9,14 +9,23 @@ The app will provide a second opinion to doctors in real-time:
 Model was based on https://www.nature.com/articles/s41598-020-73060-w
 
 ## Usage
-1. In order to simply classify an image - make sure you download [Classification_App](https://github.com/kolron/ECG4U/tree/main/Classification_App "Classification_App")and update the paths.
-2. In order to re-train the network - please turn to [Training_And_Classification_App](https://github.com/kolron/ECG4U/tree/main/Training_And_Classification_App "Training_And_Classification_App"). Make sure you update the paths as well.
+1. In order to simply classify an image - Send a POST request as spcefied in: [Classification_App]( https://github.com/kolron/Ecg_proj/tree/main/Classification_App) - no need to download the repository.
+2. In order to re-train the network - Download [Training_And_Classification_App](https://github.com/kolron/Ecg_proj/tree/main/Training_And_Classification_App). Make sure you update the paths, memory and GPU paramaters to fit your system.
+Note that training is binary only, as such you need to train each class you want to classify independently. 
 
 ## Requirements
+training:
 - Pytorch
 - Numpy
 - Pillow
 - h5py
+
+classifying:
+- Pytorch (cpu only)
+- Numpy
+- Pillow
+- Flask (flask, CORS, flask_restful)
+- gunicorn
 
 ## Version 0.1
 The app can only distinguish between normal sinus rhythm and atrial fibrillation (A-Fib).
