@@ -8,6 +8,6 @@ image = open(IMAGE_PATH, "rb").read()
 payload = {"image": image}
 
 # submit the request
-r = requests.post(KERAS_REST_API_URL, files=payload).json()
+r = requests.post(HEROKU_URL, files=payload).json()
 print(r)
 
