@@ -19,15 +19,17 @@ class Status(Resource):
     def get(self):
         try:
             return {'data': 'Api running'}
-        except error:
-            return {'data': error}
+        except:
+            return {'data': 'error'}
 
 
 class Prediction(Resource):
     def post(self):
+        re = request
+        request.form_data_parser_class
         if request.files.get("image"):
             image = request.files["image"].read()
-            image = Image.open(io.BytesIO(image))
+            image = Image.open(io.BytesIO(image)).convert('RGB')
             result = Classify.predict(image)
             return jsonify(result)
         else:
