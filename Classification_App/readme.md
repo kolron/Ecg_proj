@@ -1,7 +1,7 @@
 # Classification App
 ---
 NOTE: This directory is designed purely for the backend api to allow communication with our server ,which is deployed on Herkou.
-Meaning: This is NOT the actual (Android) app - that will be in a different repository.
+Meaning: This is NOT the actual (Android) app - [that will be in a different repository.](https://github.com/kolron/ECG4U_Mobile)
 
 ---
 To communicate with our server, which hosts all our models, send a POST request with an ECG image as 'files' payload to https://ecg4u-api.herokuapp.com/predict endpoint.
