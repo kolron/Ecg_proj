@@ -2,7 +2,7 @@
 from __future__ import print_function
 import transforms as tf
 from transforms import *
-from ECG_rendered_multilead_dataloader import *
+from ECG_dataloader import *
 import models
 from PIL import Image
 import pandas as pd
