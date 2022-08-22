@@ -13,6 +13,10 @@ Model was based on https://www.nature.com/articles/s41598-020-73060-w
 2. In order to re-train the network - Download [Training_And_Classification_App](https://github.com/kolron/Ecg_proj/tree/main/Training_And_Classification_App). Make sure you update the paths, memory and GPU paramaters to fit your system.
 Note that training is binary only, as such you need to train each class you want to classify independently. 
 
+## Mobile Application
+ The mobile App (For android only) is available to see here https://github.com/kolron/ECG4U_Mobile
+
+
 ## Requirements
 training:
 - Pytorch
